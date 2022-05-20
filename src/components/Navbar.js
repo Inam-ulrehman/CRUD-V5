@@ -3,11 +3,6 @@ import { React } from 'react'
 import styled from 'styled-components'
 
 const Navbar = () => {
-<<<<<<< HEAD
-=======
-  
-
->>>>>>> 5c7464a0b1bf0764e4d71b9fe91dd75c33f49c0a
   return (
     <Wrapper>
       <div className='menu'>
