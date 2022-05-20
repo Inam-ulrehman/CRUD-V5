@@ -1,7 +1,36 @@
-import React from 'react'
+import { React } from 'react'
+import { useSelector } from 'react-redux'
+import styled from 'styled-components'
 
 const Navbar = () => {
-  return <div>Navbar</div>
-}
+  const { user } = useSelector((state) => state.user)
 
+  return (
+    <Wrapper>
+      <div className='menu'>
+        <button type='button'>Menu</button>
+      </div>
+      <div className='dashboard'>
+        <h3>Dashboard</h3>
+      </div>
+      <div className='user'>
+        <p>Hello , {user.name}</p>
+        <button type='button' className='btn'>
+          Sign Out
+        </button>
+      </div>
+    </Wrapper>
+  )
+}
+const Wrapper = styled.nav`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  .user {
+    p {
+      margin: 0;
+    }
+  }
+`
 export default Navbar
