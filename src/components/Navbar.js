@@ -1,9 +1,9 @@
 import { React } from 'react'
 import styled from 'styled-components'
-import { useSelector } from 'react-redux'
+// import { useSelector } from 'react-redux'
 
 const Navbar = () => {
-  const user = useSelector((state) => state.user.user.name)
+  // const user = useSelector((state) => state.user.user.name)
 
   return (
     <Wrapper>
