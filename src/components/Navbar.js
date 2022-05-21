@@ -1,8 +1,10 @@
 import { React } from 'react'
-
 import styled from 'styled-components'
+import { useSelector } from 'react-redux'
 
 const Navbar = () => {
+  const user = useSelector((state) => state.user.user.name)
+  console.log(user)
   return (
     <Wrapper>
       <div className='menu'>
@@ -12,7 +14,7 @@ const Navbar = () => {
         <h3>Dashboard</h3>
       </div>
       <div className='user'>
-        <p>Hello </p>
+        <p>Hello {`${user}`}</p>
         <button type='button' className='btn'>
           Sign Out
         </button>

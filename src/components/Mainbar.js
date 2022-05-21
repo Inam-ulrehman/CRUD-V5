@@ -8,7 +8,7 @@ const Mainbar = () => {
     <Wrapper>
       {links.map((item) => {
         const { id, path, text } = item
-        console.log(item)
+
         return (
           <NavLink key={id} to={path}>
             {text}
