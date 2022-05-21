@@ -51,7 +51,7 @@ const Register = () => {
   useEffect(() => {
     if (user) {
       setTimeout(() => {
-        navigate('/')
+        navigate('/dashboard')
       }, 3000)
     }
     // eslint-disable-next-line

@@ -17,7 +17,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route
-          path='/'
+          path='/dashboard'
           element={
             <ProtectedRoute>
               <SharedLayout />
@@ -29,7 +29,7 @@ const App = () => {
           <Route path='add-job' element={<AddJob />} />
           <Route path='profile' element={<Profile />} />
         </Route>
-        <Route path='landing' element={<Landing />} />
+        <Route path='/' element={<Landing />} />
         <Route path='*' element={<Error />} />
         <Route path='register' element={<Register />} />
       </Routes>
