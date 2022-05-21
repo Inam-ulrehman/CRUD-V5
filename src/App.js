@@ -25,13 +25,13 @@ const App = () => {
           }
         >
           <Route index element={<Stats />} />
-          <Route path='edit-job' element={<EditJob />} />
-          <Route path='add-job' element={<AddJob />} />
-          <Route path='profile' element={<Profile />} />
+          <Route path='/edit-job' element={<EditJob />} />
+          <Route path='/add-job' element={<AddJob />} />
+          <Route path='/profile' element={<Profile />} />
         </Route>
         <Route path='/' element={<Landing />} />
         <Route path='*' element={<Error />} />
-        <Route path='register' element={<Register />} />
+        <Route path='/register' element={<Register />} />
       </Routes>
       <ToastContainer />
     </BrowserRouter>
